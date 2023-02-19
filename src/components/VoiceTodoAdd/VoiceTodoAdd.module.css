@@ -1,0 +1,53 @@
+.start,
+.stop,
+.save,
+.reset {
+  background-color: transparent;
+  font-size: 1.1rem;
+  border: solid gray;
+  border-radius: 7%;
+}
+
+.container {
+    padding: 1rem 1rem;
+    margin: 0.1rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--color-bg-dark);
+    width: 100%;
+  }
+  .form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-bg-dark);
+  }
+
+  .startstop {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .stop {
+    color: #f40a35;
+    margin-left: 0.5rem;
+  }
+
+  .reset {
+    margin-left: 0.5rem;
+    color: green
+  }
+
+  .start {
+    color: #2356ff;
+  }
+
+  .save {
+    color: var(--color-accent);
+    margin-left: 0.5rem;
+  }
+  
+  .start:hover, .stop:hover, .reset:hover, .save:hover {
+    transform: scale(1.1);
+  }

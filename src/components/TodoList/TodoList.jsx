@@ -15,6 +15,7 @@ export default function TodoList({ filter }) {
   useEffect(() => {
     localStorage.setItem('todos', JSON.stringify(todos));
   }, [todos]);
+  
   const filtered = getFilteredItems(todos, filter);
 
   return (
@@ -38,6 +39,7 @@ function readTodos() {
   const todos = localStorage.getItem('todos');
   return todos ? JSON.parse(todos) : [];
 }
+
 function getFilteredItems(todos, filter) {
   if (filter === 'all') {
     return todos;
